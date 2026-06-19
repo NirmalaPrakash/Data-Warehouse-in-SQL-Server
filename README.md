@@ -32,10 +32,10 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
           -	Decentralized data ownership across business domains.
 
 ## 4. Data Warehouse Modeling Approaches
-      - 1.Inmon Approach: Staging → Enterprise Data Warehouse → Data Mart
-      - 2.Kimball Approach: Staging → Data Mart
-      - 3.Data Vault: Staging → Raw Vault → Business Vault → Data Mart
-      - 4.Medallion Architecture: Bronze → Silver → Gold
+      - **1.Inmon Approach:** Staging → Enterprise Data Warehouse → Data Mart
+      - **2.Kimball Approach:** Staging → Data Mart
+      - **3.Data Vault: Staging → Raw Vault → Business Vault → Data Mart
+      - **4.Medallion Architecture: Bronze → Silver → Gold
 
 Here's a clear breakdown of the medallion architecture, which is widely used in modern data lakehouse design.
 
