@@ -1,9 +1,9 @@
 # Data-Warehouse-in-SQL-Server
 A **Data Warehouse** serves as a centralized, integrated, and reliable source of data for reporting and analytics. By implementing ETL processes, proper architecture, data modeling, and governance, organizations can transform raw data into meaningful business insights efficiently and accurately.
 
-**Key Points**
+## Key Points
 
-**1. Purpose of a Data Warehouse**
+## 1. Purpose of a Data Warehouse
     •	Centralizes data from multiple source systems.
     •	Provides a single source of truth for reporting.
     •	Stores historical data.
@@ -11,7 +11,7 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
     •	Reduces manual reporting efforts.
     •	Supports large-scale data processing.
 
-**2. Problems Without a Data Warehouse**
+## 2. Problems Without a Data Warehouse
     •	Analysts manually collect data.
     •	Reports become inconsistent.
     •	Different departments use different versions of data.
@@ -19,7 +19,7 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
     •	Difficult to integrate multiple data sources.
     •	Poor scalability for large datasets.
 
-**3. Data Warehouse Architecture Approaches**
+## 3. Data Warehouse Architecture Approaches
       **a) Data Warehouse**
           •	Structured data.
           •	Reporting-focused.
@@ -31,7 +31,7 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
       **d) Data Mesh**
           •	Decentralized data ownership across business domains.
 
-**4. Data Warehouse Modeling Approaches**
+## 4. Data Warehouse Modeling Approaches
       **1.Inmon Approach:** Staging → Enterprise Data Warehouse → Data Mart
       **2.Kimball Approach:** Staging → Data Mart
       **3.Data Vault:** Staging → Raw Vault → Business Vault → Data Mart
