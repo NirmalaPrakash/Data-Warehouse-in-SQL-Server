@@ -91,7 +91,7 @@ In an SSIS context, this often translates to:
 
 ## Bronze Rules
 * All names must start with the source system name, and table names must match their original names without renaming.
-* <sourcesystem>_
+* <sourcesystem>.<entity>
 * <sourcesystem> : Name of the source system (e.g., crm, erp).
    * : Exact table name from the source system.
    * Example: crm_customer_info → Customer information from the CRM system.
