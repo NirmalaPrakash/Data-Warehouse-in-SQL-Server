@@ -98,14 +98,14 @@ In an SSIS context, this often translates to:
 
 ## Silver Rules
 * All names must start with the source system name, and table names must match their original names without renaming.
-* _<sourcesystem>_
+* _<source_system>
 * <sourcesystem> : Name of the source system (e.g., crm, erp).
    * : Exact table name from the source system.
    * Example: crm_customer_info → Customer information from the CRM system.
 
 ## Gold Rules
 * All names must use meaningful, business-aligned names for tables, starting with the category prefix.
-* <category>_
+* <category>
 * <category> : Describes the role of the table, such as dim (dimension) or fact (fact table).
    * : Descriptive name of the table, aligned with the business domain (e.g., customers, products, sales).
    * Examples:
