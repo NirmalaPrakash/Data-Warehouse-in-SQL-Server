@@ -4,7 +4,6 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
 **Key Points**
 
 **1. Purpose of a Data Warehouse**
-
     •	Centralizes data from multiple source systems.
     •	Provides a single source of truth for reporting.
     •	Stores historical data.
@@ -13,7 +12,6 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
     •	Supports large-scale data processing.
 
 **2. Problems Without a Data Warehouse**
-
     •	Analysts manually collect data.
     •	Reports become inconsistent.
     •	Different departments use different versions of data.
@@ -22,7 +20,6 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
     •	Poor scalability for large datasets.
 
 **3. Data Warehouse Architecture Approaches**
-      
       **a) Data Warehouse**
           •	Structured data.
           •	Reporting-focused.
@@ -35,11 +32,10 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
           •	Decentralized data ownership across business domains.
 
 **4. Data Warehouse Modeling Approaches**
-
-      **1.	Inmon Approach:** Staging → Enterprise Data Warehouse → Data Mart
-      **2.	Kimball Approach:** Staging → Data Mart
-      3.	Data Vault: Staging → Raw Vault → Business Vault → Data Mart
-      4.	Medallion Architecture: Bronze → Silver → Gold
+      **1.Inmon Approach:** Staging → Enterprise Data Warehouse → Data Mart
+      **2.Kimball Approach:** Staging → Data Mart
+      **3.Data Vault:** Staging → Raw Vault → Business Vault → Data Mart
+      **4.Medallion Architecture:** Bronze → Silver → Gold
 
 Here's a clear breakdown of the medallion architecture, which is widely used in modern data lakehouse design.
 
