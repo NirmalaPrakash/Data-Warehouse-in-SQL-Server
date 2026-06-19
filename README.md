@@ -39,8 +39,10 @@ A **Data Warehouse **serves as a centralized, integrated, and reliable source of
 
 Here's a clear breakdown of the medallion architecture, which is widely used in modern data lakehouse design.
 
-## What It Is
-The medallion architecture is a layered approach to organizing data as it moves through an ETL/ELT pipeline, progressively refining it through three stages: **Bronze → Silver → Gold**. Each layer represents an increasing level of data quality and business readiness.
+## What It Is medallion architecture 
+The medallion architecture is a layered approach to organizing data as it moves through an ETL/ELT pipeline, progressively refining it through three stages: **Bronze → Silver → Gold**. 
+
+Each layer represents an increasing level of data quality and business readiness.
 
 ## Bronze Layer (Raw)
 This is the landing zone for raw data, captured as-is from source systems.
@@ -77,7 +79,7 @@ This is the consumption layer — optimized for reporting, dashboards, and analy
 - **Example:** A `Sales_Summary` table aggregated by month, region, and product category, ready for a Power BI dashboard
 
 ## Visual Flow
-<img width="2720" height="2248" alt="medallion_architecture_ssis_flow" src="https://github.com/user-attachments/assets/9cd344c1-3df1-4e45-8e19-932f22d136c7" />
+
 
 ## Why It Matters for SSIS/Power BI Work
 In an SSIS context, this often translates to:
