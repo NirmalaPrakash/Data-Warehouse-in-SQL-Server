@@ -12,9 +12,9 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
    - Supports large-scale data processing.
 
 ## 2. Problems Without a Data Warehouse
-    -	Analysts manually collect data.
-    -	Reports become inconsistent.
-    -	Different departments use different versions of data.
+    - Analysts manually collect data.
+    - Reports become inconsistent.
+    - Different departments use different versions of data.
     -	High risk of human errors.
     -	Difficult to integrate multiple data sources.
     -	Poor scalability for large datasets.
