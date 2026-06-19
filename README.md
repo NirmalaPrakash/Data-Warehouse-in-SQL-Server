@@ -4,12 +4,12 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
 ## Key Points
 
 ## 1. Purpose of a Data Warehouse
-   - **Centralizes data from multiple source systems.
-   - **Provides a single source of truth for reporting.
-   - **Stores historical data.
-   - **Improves decision-making.
-   - **Reduces manual reporting efforts.
-   - **Supports large-scale data processing.
+   - Centralizes data from multiple source systems.
+   - Provides a single source of truth for reporting.
+   - Stores historical data.
+   - Improves decision-making.
+   - Reduces manual reporting efforts.
+   - Supports large-scale data processing.
 
 ## 2. Problems Without a Data Warehouse
     •	Analysts manually collect data.
