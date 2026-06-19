@@ -79,10 +79,9 @@ This is the consumption layer — optimized for reporting, dashboards, and analy
 - **Example:** A `Sales_Summary` table aggregated by month, region, and product category, ready for a Power BI dashboard
 
 ## Visual Flow
-<img width="974" height="301" alt="image" src="https://github.com/user-attachments/assets/c41c8f8a-b572-45c7-9824-1f783b926887" />
+<img width="700" height="250" alt="image" src="https://github.com/user-attachments/assets/c41c8f8a-b572-45c7-9824-1f783b926887" />
 
-<img width="1402" height="702" alt="image" src="https://github.com/user-attachments/assets/591b7da4-fa0c-4ae6-af56-22674bd275f5" />
-
+<img width="1202" height="500" alt="image" src="https://github.com/user-attachments/assets/591b7da4-fa0c-4ae6-af56-22674bd275f5" />
 
 ## Why It Matters for SSIS/Power BI Work
 In an SSIS context, this often translates to:
@@ -90,5 +89,42 @@ In an SSIS context, this often translates to:
 - **Silver:** Data Flow Tasks doing lookups, deduplication, derived columns, and conforming dimensions
 - **Gold:** Aggregation transformations and final loads into your data mart, which Power BI then connects to via Import or DirectQuery
 
+## Bronze Rules
+* All names must start with the source system name, and table names must match their original names without renaming.
+* <sourcesystem>_
+* <sourcesystem> : Name of the source system (e.g., crm, erp).
+   * : Exact table name from the source system.
+   * Example: crm_customer_info → Customer information from the CRM system.
+
+## Silver Rules
+* All names must start with the source system name, and table names must match their original names without renaming.
+* <sourcesystem>_
+* <sourcesystem> : Name of the source system (e.g., crm, erp).
+   * : Exact table name from the source system.
+   * Example: crm_customer_info → Customer information from the CRM system.
+
+## Gold Rules
+* All names must use meaningful, business-aligned names for tables, starting with the category prefix.
+* <category>_
+* <category> : Describes the role of the table, such as dim (dimension) or fact (fact table).
+   * : Descriptive name of the table, aligned with the business domain (e.g., customers, products, sales).
+   * Examples:
+   * dim_customers → Dimension table for customer data.
+      * fact_sales → Fact table containing sales transactions.
+   
+## Technical Columns
+* All technical columns must start with the prefix dwh_, followed by a descriptive name indicating the column's purpose.
+* dwh_<column_name>
+* dwh : Prefix exclusively for system-generated metadata.
+   * <column_name> : Descriptive name indicating the column's purpose.
+   * Example: dwh_load_date → System-generated column used to store the date when the record was loaded.
+
+## Stored Procedure
+* All stored procedures used for loading data must follow the naming pattern: load_<layer>.
+* <layer> : Represents the layer being loaded, such as bronze, silver, or gold.
+   * Example:
+   * load_bronze → Stored procedure for loading data into the Bronze layer.
+      * load_silver → Stored procedure for loading data into the Silver layer.
+   
 <img width="1154" height="870" alt="image" src="https://github.com/user-attachments/assets/8366221e-335a-4461-b445-38f5c3f4879e" />
 
