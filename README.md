@@ -12,30 +12,30 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
    - Supports large-scale data processing.
 
 ## 2. Problems Without a Data Warehouse
-    - Analysts manually collect data.
-    - Reports become inconsistent.
-    - Different departments use different versions of data.
-    -	High risk of human errors.
-    -	Difficult to integrate multiple data sources.
-    -	Poor scalability for large datasets.
+  - Analysts manually collect data.
+  - Reports become inconsistent.
+  - Different departments use different versions of data.
+  - High risk of human errors.
+  - Difficult to integrate multiple data sources.
+  - Poor scalability for large datasets.
 
 ## 3. Data Warehouse Architecture Approaches
-      **a) Data Warehouse**
-          -	Structured data.
-          -	Reporting-focused.
-      **b) Data Lake**
-          -	Structured and unstructured data.
-          -	Supports advanced analytics.
-      **c) Data Lakehouse**
-          -	Combines Data Warehouse and Data Lake benefits.
-      **d) Data Mesh**
-          -	Decentralized data ownership across business domains.
+**a) Data Warehouse**
+  - Structured data.
+  - Reporting-focused.
+**b) Data Lake**
+  - Structured and unstructured data.
+  - Supports advanced analytics.
+**c) Data Lakehouse**
+  - Combines Data Warehouse and Data Lake benefits.
+**d) Data Mesh**
+  - Decentralized data ownership across business domains.
 
 ## 4. Data Warehouse Modeling Approaches
-      - **1.Inmon Approach:** Staging → Enterprise Data Warehouse → Data Mart
-      - **2.Kimball Approach:** Staging → Data Mart
-      - **3.Data Vault: Staging → Raw Vault → Business Vault → Data Mart
-      - **4.Medallion Architecture: Bronze → Silver → Gold
+  - **1.Inmon Approach:** Staging → Enterprise Data Warehouse → Data Mart
+  - **2.Kimball Approach:** Staging → Data Mart
+  - **3.Data Vault: Staging → Raw Vault → Business Vault → Data Mart
+  - **4.Medallion Architecture: Bronze → Silver → Gold
 
 Here's a clear breakdown of the medallion architecture, which is widely used in modern data lakehouse design.
 
