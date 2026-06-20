@@ -31,7 +31,7 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
 - **c) Data Lakehouse**
   - Combines Data Warehouse and Data Lake benefits.
     
-**d) Data Mesh**
+- **d) Data Mesh**
   - Decentralized data ownership across business domains.
 
 ## 4. Data Warehouse Modeling Approaches
