@@ -47,9 +47,9 @@ Its main purpose is to:
 
 #### Example CRM Data
 
-| CustomerID | CustomerName | Email                                       | Phone      | City     |
-| ---------- | ------------ | ------------------------------------------- | ---------- | -------- |
-| 101        | John Smith   | [nimmu@gmail.com](mailto:prakash@gmail.com) | 9876543210 | New York |
+| CustomerID | CustomerName | Email                                           | Phone      | City     |
+| ---------- | ------------ | ----------------------------------------------- | ---------- | -------- |
+| 101        | Nirmala Prakash   | [nimmu@gmail.com](mailto:prakash@gmail.com)     | 9380025025 | Bangalore |
 
 #### Popular CRM Systems
 
