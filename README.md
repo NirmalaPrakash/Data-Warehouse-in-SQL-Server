@@ -42,12 +42,12 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
 
 Here's a clear breakdown of the medallion architecture, which is widely used in modern data lakehouse design.
 
-## What It Is medallion architecture 
+## 5. What It Is medallion architecture 
 The medallion architecture is a layered approach to organizing data as it moves through an ETL/ELT pipeline, progressively refining it through three stages: **Bronze → Silver → Gold**. 
 
 Each layer represents an increasing level of data quality and business readiness.
 
-## Bronze Layer (Raw)
+## a) Bronze Layer (Raw)
 This is the landing zone for raw data, captured as-is from source systems.
 
 - **Purpose:** Preserve an unaltered historical record of source data
@@ -58,7 +58,7 @@ This is the landing zone for raw data, captured as-is from source systems.
   - Acts as your single source of truth for replay/reprocessing if downstream logic changes
 - **Example:** Raw CSV exports from an ERP system, JSON from an API, exact copies of OLTP tables
 
-## Silver Layer (Cleansed/Conformed)
+## b) Silver Layer (Cleansed/Conformed)
 Data here is validated, cleaned, and standardized — but still fairly granular (not yet aggregated for specific business questions).
 
 - **Purpose:** Create a trusted, queryable version of the data
@@ -70,7 +70,7 @@ Data here is validated, cleaned, and standardized — but still fairly granular 
   - Slowly Changing Dimension (SCD) logic often implemented here
 - **Example:** A clean `Customers` table with deduplicated records, standardized addresses, validated emails
 
-## Gold Layer (Curated/Business-Level)
+## c) Gold Layer (Curated/Business-Level)
 This is the consumption layer — optimized for reporting, dashboards, and analytics.
 
 - **Purpose:** Serve specific business use cases
@@ -85,12 +85,17 @@ This is the consumption layer — optimized for reporting, dashboards, and analy
 <img width="700" height="250" alt="image" src="https://github.com/user-attachments/assets/c41c8f8a-b572-45c7-9824-1f783b926887" />
 <img width="1200" height="500" alt="image" src="https://github.com/user-attachments/assets/591b7da4-fa0c-4ae6-af56-22674bd275f5" />
 
-## Why It Matters for SSIS/Power BI Work
+## 6) Why It Matters for SSIS/Power BI Work
 In an SSIS context, this often translates to:
 - _**Bronze:**_ A package extracting source data into raw staging tables (minimal transformation)
 - _**Silver:**_ Data Flow Tasks doing lookups, deduplication, derived columns, and conforming dimensions
 - _**Gold:**_ Aggregation transformations and final loads into your data mart, which Power BI then connects to via Import or DirectQuery
 
+## 7) Naming Conventions Rules
+The project uses:
+
+<img width="800" height="533" alt="image" src="https://github.com/user-attachments/assets/d4e3679c-bc39-4cdc-bc59-adb7654c7027" />
+ 
 ## Bronze Rules
 * All names must start with the source system name, and table names must match their original names without renaming.
 * **sourcesystem.entity**
@@ -127,11 +132,6 @@ In an SSIS context, this often translates to:
    * **Example:**
    * _**load_bronze**_ → Stored procedure for loading data into the Bronze layer.
    * _**load_silver**_ → Stored procedure for loading data into the Silver layer.
-
-## Naming Conventions
-The project uses:
-
-<img width="800" height="533" alt="image" src="https://github.com/user-attachments/assets/d4e3679c-bc39-4cdc-bc59-adb7654c7027" />
 
 ## Final Flow Diagram of Data Warehouse
 <img width="1100" height="870" alt="image" src="https://github.com/user-attachments/assets/8366221e-335a-4461-b445-38f5c3f4879e" />
