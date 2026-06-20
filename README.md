@@ -34,7 +34,7 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
 - **d) Data Mesh**
   - Decentralized data ownership across business domains.
 
-### What is CRM?
+### 4. What is CRM?
 
 **CRM (Customer Relationship Management)** is a system used to manage interactions with customers and prospects.
 
@@ -186,7 +186,7 @@ CustomerName | City      | Product | Amount
 Nirmala      | Bangalore | Laptop  | 50000
 ```
 
-## 4. Data Warehouse Modeling Approaches
+## 5. Data Warehouse Modeling Approaches
   - **1.Inmon Approach:** Staging →Enterprise Data Warehouse →Data Mart
   - **2.Kimball Approach:** Staging → Data Mart
   - **3.Data Vault:** Staging → Raw Vault → Business Vault → Data Mart
