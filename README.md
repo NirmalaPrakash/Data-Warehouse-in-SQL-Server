@@ -101,19 +101,19 @@ In an SSIS context, this often translates to:
 
 ## Silver Rules
 * All names must start with the source system name, and table names must match their original names without renaming.
-* **sourcesystem.entity**
+* _**sourcesystem.entity**_
     * **sourcesystem:** Name of the source system (ex:CRM, ERP).
     * **entity:** Exact table name from the source system.
-    * **Example:** **crm_customer_info** → Customer information from the CRM system.
+    * **Example:** _**crm_customer_info**_ → Customer information from the CRM system.
 
 ## Gold Rules
 * All names must use meaningful, business-aligned names for tables, starting with the category prefix.
-* **category.entity**
+* _**category.entity**_
    * **category:** Describes the role of the table, such as dim (dimension) or fact (fact table).
    * **entity:** Descriptive name of the table, aligned with the business domain (e.g., customers, products, sales).
    * **Examples:**
-      * **dim_customers** → Dimension table for customer data.
-      * **fact_sales** → Fact table containing sales transactions.
+      * _**dim_customers**_ → Dimension table for customer data.
+      * _**fact_sales**_ → Fact table containing sales transactions.
    
 ## Technical Columns
 * All technical columns must start with the prefix dwh_, followed by a descriptive name indicating the column's purpose.
@@ -124,10 +124,10 @@ In an SSIS context, this often translates to:
 
 ## Stored Procedure
 * All stored procedures used for loading data must follow the naming pattern: load_<layer>.
-* layer: Represents the layer being loaded, such as bronze, silver, or gold.
+* _**layer:**_ Represents the layer being loaded, such as bronze, silver, or gold.
    * Example:
-   * load_bronze → Stored procedure for loading data into the Bronze layer.
-      * load_silver → Stored procedure for loading data into the Silver layer.
+   * _load_bronze_ → Stored procedure for loading data into the Bronze layer.
+   * _load_silver_ → Stored procedure for loading data into the Silver layer.
    
 <img width="1154" height="870" alt="image" src="https://github.com/user-attachments/assets/8366221e-335a-4461-b445-38f5c3f4879e" />
 
