@@ -34,6 +34,158 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
 - **d) Data Mesh**
   - Decentralized data ownership across business domains.
 
+### What is CRM?
+
+**CRM (Customer Relationship Management)** is a system used to manage interactions with customers and prospects.
+
+Its main purpose is to:
+
+* Track customers
+* Manage sales activities
+* Store customer information
+* Improve customer relationships
+
+#### Example CRM Data
+
+| CustomerID | CustomerName | Email                                   | Phone      | City     |
+| ---------- | ------------ | --------------------------------------- | ---------- | -------- |
+| 101        | John Smith   | [john@gmail.com](mailto:john@gmail.com) | 9876543210 | New York |
+
+#### Popular CRM Systems
+
+* Salesforce
+* Microsoft Dynamics 365
+* HubSpot CRM
+* Zoho CRM
+
+#### CRM Modules
+
+```text
+Customers
+    │
+    ├── Leads
+    ├── Opportunities
+    ├── Contacts
+    ├── Sales
+    └── Customer Support
+```
+
+---
+
+### What is ERP?
+
+**ERP (Enterprise Resource Planning)** is a system used to manage internal business operations and resources.
+
+Its main purpose is to:
+
+* Manage products
+* Inventory
+* Finance
+* Purchasing
+* Manufacturing
+* Human Resources
+
+#### Example ERP Data
+
+| ProductID | ProductName | Quantity | Price |
+| --------- | ----------- | -------- | ----- |
+| P101      | Laptop      | 500      | 60000 |
+
+#### Popular ERP Systems
+
+* SAP ERP
+* Oracle ERP Cloud
+* Microsoft Dynamics 365 Finance
+* Odoo
+
+#### ERP Modules
+
+```text
+Business Operations
+        │
+        ├── Finance
+        ├── Inventory
+        ├── Procurement
+        ├── Manufacturing
+        ├── HR
+        └── Supply Chain
+```
+
+---
+
+## CRM vs ERP
+
+| Feature           | CRM                     | ERP                           |
+| ----------------- | ----------------------- | ----------------------------- |
+| Focus             | Customers               | Business Operations           |
+| Users             | Sales Team              | Finance, HR, Operations       |
+| Data              | Customers, Leads, Sales | Products, Inventory, Finance  |
+| Goal              | Increase Revenue        | Improve Efficiency            |
+| External/Internal | External (Customers)    | Internal (Business Processes) |
+
+---
+
+## In Data Warehouse Projects
+
+Usually data comes from both CRM and ERP systems.
+
+```text
+        CRM System
+      (Customers)
+            │
+            ▼
+
+        ERP System
+ (Products, Orders, Finance)
+            │
+            ▼
+
+       ETL Process
+ Extract → Transform → Load
+            │
+            ▼
+
+      Data Warehouse
+            │
+            ▼
+
+      Gold Layer
+            │
+            ▼
+
+       Power BI
+       Reports
+       Dashboards
+```
+
+### Real Example
+
+**CRM Source**
+
+```text
+CustomerID = 1001
+CustomerName = Nirmala
+Gender = Female
+City = Bangalore
+```
+
+**ERP Source**
+
+```text
+CustomerID = 1001
+OrderID = 5001
+Product = Laptop
+Amount = 50000
+```
+
+**Gold Layer (Data Warehouse)**
+
+```text
+CustomerName | City      | Product | Amount
+-------------|-----------|---------|--------
+Nirmala      | Bangalore | Laptop  | 50000
+```
+
 ## 4. Data Warehouse Modeling Approaches
   - **1.Inmon Approach:** Staging →Enterprise Data Warehouse →Data Mart
   - **2.Kimball Approach:** Staging → Data Mart
