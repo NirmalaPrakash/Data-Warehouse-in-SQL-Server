@@ -194,7 +194,7 @@ Nirmala      | Bangalore | Laptop  | 50000
 
 Here's a clear breakdown of the medallion architecture, which is widely used in modern data lakehouse design.
 
-## 5. What It Is medallion architecture 
+## 6. What It Is medallion architecture 
 The medallion architecture is a layered approach to organizing data as it moves through an ETL/ELT pipeline, progressively refining it through three stages: **Bronze → Silver → Gold**. 
 
 Each layer represents an increasing level of data quality and business readiness.
@@ -237,13 +237,13 @@ This is the consumption layer — optimized for reporting, dashboards, and analy
 <img width="700" height="250" alt="image" src="https://github.com/user-attachments/assets/c41c8f8a-b572-45c7-9824-1f783b926887" />
 <img width="1200" height="500" alt="image" src="https://github.com/user-attachments/assets/591b7da4-fa0c-4ae6-af56-22674bd275f5" />
 
-## 6) Why It Matters for SSIS/Power BI Work
+## 7. Why It Matters for SSIS/Power BI Work
 In an SSIS context, this often translates to:
 - _**Bronze:**_ A package extracting source data into raw staging tables (minimal transformation)
 - _**Silver:**_ Data Flow Tasks doing lookups, deduplication, derived columns, and conforming dimensions
 - _**Gold:**_ Aggregation transformations and final loads into your data mart, which Power BI then connects to via Import or DirectQuery
 
-## 7) Naming Conventions Rules
+## 8. Naming Conventions Rules
 The project uses:
 
 <img width="800" height="533" alt="image" src="https://github.com/user-attachments/assets/d4e3679c-bc39-4cdc-bc59-adb7654c7027" />
@@ -286,6 +286,6 @@ The project uses:
    * _**load_bronze**_ → Stored procedure for loading data into the Bronze layer.
    * _**load_silver**_ → Stored procedure for loading data into the Silver layer.
 
-## Final Flow Diagram of Data Warehouse
+## 9. Final Flow Diagram of Data Warehouse
 <img width="1100" height="870" alt="image" src="https://github.com/user-attachments/assets/8366221e-335a-4461-b445-38f5c3f4879e" />
 
