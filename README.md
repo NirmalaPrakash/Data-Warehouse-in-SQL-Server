@@ -83,51 +83,50 @@ This is the consumption layer — optimized for reporting, dashboards, and analy
 
 ## Visual Flow
 <img width="700" height="250" alt="image" src="https://github.com/user-attachments/assets/c41c8f8a-b572-45c7-9824-1f783b926887" />
-
-<img width="1202" height="500" alt="image" src="https://github.com/user-attachments/assets/591b7da4-fa0c-4ae6-af56-22674bd275f5" />
+<img width="1200" height="500" alt="image" src="https://github.com/user-attachments/assets/591b7da4-fa0c-4ae6-af56-22674bd275f5" />
 
 ## Why It Matters for SSIS/Power BI Work
 In an SSIS context, this often translates to:
-- **Bronze:** A package extracting source data into raw staging tables (minimal transformation)
-- **Silver:** Data Flow Tasks doing lookups, deduplication, derived columns, and conforming dimensions
-- **Gold:** Aggregation transformations and final loads into your data mart, which Power BI then connects to via Import or DirectQuery
+- _**Bronze:**_ A package extracting source data into raw staging tables (minimal transformation)
+- _**Silver:**_ Data Flow Tasks doing lookups, deduplication, derived columns, and conforming dimensions
+- _**Gold:**_ Aggregation transformations and final loads into your data mart, which Power BI then connects to via Import or DirectQuery
 
 ## Bronze Rules
 * All names must start with the source system name, and table names must match their original names without renaming.
 * **sourcesystem.entity**
-   * **sourcesystem:** Name of the source system (ex:CRM, ERP).
-   * **entity:** Exact table name from the source system.
+   * _**sourcesystem:**_ Name of the source system (ex:CRM, ERP).
+   * _**entity:**_ Exact table name from the source system.
    * **Example:** crm_customer_info → Customer information from the CRM system.
 
 ## Silver Rules
 * All names must start with the source system name, and table names must match their original names without renaming.
 * _**sourcesystem.entity**_
-    * **sourcesystem:** Name of the source system (ex:CRM, ERP).
-    * **entity:** Exact table name from the source system.
+    * _**sourcesystem:**_ Name of the source system (ex:CRM, ERP).
+    * _**entity:**_ Exact table name from the source system.
     * **Example:** _**crm_customer_info**_ → Customer information from the CRM system.
 
 ## Gold Rules
 * All names must use meaningful, business-aligned names for tables, starting with the category prefix.
 * _**category.entity**_
-   * **category:** Describes the role of the table, such as dim (dimension) or fact (fact table).
-   * **entity:** Descriptive name of the table, aligned with the business domain (e.g., customers, products, sales).
+   * _**category:**_ Describes the role of the table, such as dim (dimension) or fact (fact table).
+   * _**entity:**_ Descriptive name of the table, aligned with the business domain (e.g., customers, products, sales).
    * **Examples:**
       * _**dim_customers**_ → Dimension table for customer data.
       * _**fact_sales**_ → Fact table containing sales transactions.
    
 ## Technical Columns
 * All technical columns must start with the prefix dwh_, followed by a descriptive name indicating the column's purpose.
-* dwh_<column_name>
-   * **dwh:** Prefix exclusively for system-generated metadata.
-   * **column_name:** Descriptive name indicating the column's purpose.
+* _**dwh_<column_name>**_
+   * _**dwh:**_ Prefix exclusively for system-generated metadata.
+   * _**column_name:**_ Descriptive name indicating the column's purpose.
    * **Example:** _dwh_load_date_ → System-generated column used to store the date when the record was loaded.
 
 ## Stored Procedure
 * All stored procedures used for loading data must follow the naming pattern: load_<layer>.
 * _**layer:**_ Represents the layer being loaded, such as bronze, silver, or gold.
-   * Example:
-   * _load_bronze_ → Stored procedure for loading data into the Bronze layer.
-   * _load_silver_ → Stored procedure for loading data into the Silver layer.
+   * **Example:**
+   * _**load_bronze**_ → Stored procedure for loading data into the Bronze layer.
+   * _**load_silver**_ → Stored procedure for loading data into the Silver layer.
    
 <img width="1154" height="870" alt="image" src="https://github.com/user-attachments/assets/8366221e-335a-4461-b445-38f5c3f4879e" />
 
