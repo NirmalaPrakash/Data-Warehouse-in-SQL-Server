@@ -95,18 +95,19 @@ In an SSIS context, this often translates to:
 The project uses:
 
 <img width="800" height="533" alt="image" src="https://github.com/user-attachments/assets/d4e3679c-bc39-4cdc-bc59-adb7654c7027" />
- 
+
+## We use _snake_case_ Rule
 ## Bronze Rules
 * All names must start with the source system name, and table names must match their original names without renaming.
 * **sourcesystem.entity**
-   * _**sourcesystem:**_ Name of the source system (ex:CRM, ERP).
+   * _**sourcesystem:**_ Name of the source system (Ex: CRM, ERP).
    * _**entity:**_ Exact table name from the source system.
-   * **Example:** crm_customer_info → Customer information from the CRM system.
+   * **Example:** **crm_customer_info** → Customer information from the CRM system.
 
 ## Silver Rules
 * All names must start with the source system name, and table names must match their original names without renaming.
 * _**sourcesystem.entity**_
-    * _**sourcesystem:**_ Name of the source system (ex:CRM, ERP).
+    * _**sourcesystem:**_ Name of the source system (Ex: CRM, ERP).
     * _**entity:**_ Exact table name from the source system.
     * **Example:** _**crm_customer_info**_ → Customer information from the CRM system.
 
