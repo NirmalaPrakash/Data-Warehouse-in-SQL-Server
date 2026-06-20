@@ -20,15 +20,15 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
   - Poor scalability for large datasets.
 
 ## 3. Data Warehouse Architecture Approaches
-**a) Data Warehouse**
+- **a) Data Warehouse**
   - Structured data.
   - Reporting-focused.
     
-**b) Data Lake**
+- **b) Data Lake**
   - Structured and unstructured data.
   - Supports advanced analytics.
     
-**c) Data Lakehouse**
+- **c) Data Lakehouse**
   - Combines Data Warehouse and Data Lake benefits.
     
 **d) Data Mesh**
