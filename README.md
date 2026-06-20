@@ -289,6 +289,8 @@ The project uses:
 ## 9. Final Flow Diagram of Data Warehouse
 <img width="1100" height="870" alt="image" src="https://github.com/user-attachments/assets/8366221e-335a-4461-b445-38f5c3f4879e" />
 
+---
+
 ```text
 
 data-warehouse-project/
