@@ -116,10 +116,10 @@ In an SSIS context, this often translates to:
    
 ## Technical Columns
 * All technical columns must start with the prefix dwh_, followed by a descriptive name indicating the column's purpose.
-* _**dwh_<column_name>**_
+* _**dwh.column_name**_
    * _**dwh:**_ Prefix exclusively for system-generated metadata.
    * _**column_name:**_ Descriptive name indicating the column's purpose.
-   * **Example:** _dwh_load_date_ → System-generated column used to store the date when the record was loaded.
+   * **Example:** _**dwh_load_date**_ → System-generated column used to store the date when the record was loaded.
 
 ## Stored Procedure
 * All stored procedures used for loading data must follow the naming pattern: load_<layer>.
