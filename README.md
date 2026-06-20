@@ -34,7 +34,7 @@ A **Data Warehouse** serves as a centralized, integrated, and reliable source of
 - **d) Data Mesh**
   - Decentralized data ownership across business domains.
 
-### 4. What is CRM?
+### 4. What is CRM and ERP?
 
 **CRM (Customer Relationship Management)** is a system used to manage interactions with customers and prospects.
 
