@@ -127,6 +127,12 @@ In an SSIS context, this often translates to:
    * **Example:**
    * _**load_bronze**_ → Stored procedure for loading data into the Bronze layer.
    * _**load_silver**_ → Stored procedure for loading data into the Silver layer.
-   
+
+## Naming Conventions
+The project uses:
+
+<img width="800" height="533" alt="image" src="https://github.com/user-attachments/assets/d4e3679c-bc39-4cdc-bc59-adb7654c7027" />
+
+## Final Flow Diagram of Data Warehouse
 <img width="1154" height="870" alt="image" src="https://github.com/user-attachments/assets/8366221e-335a-4461-b445-38f5c3f4879e" />
 
