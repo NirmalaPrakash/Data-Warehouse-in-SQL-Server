@@ -131,31 +131,26 @@ Usually data comes from both CRM and ERP systems.
 
 ```text
         CRM System
-      (Customers)
+       (Customers)
             │
             ▼
-
         ERP System
  (Products, Orders, Finance)
             │
             ▼
-
        ETL Process
  Extract → Transform → Load
             │
             ▼
-
       Data Warehouse
             │
             ▼
-
-      Gold Layer
+       Gold Layer
             │
             ▼
-
-       Power BI
-       Reports
-       Dashboards
+        Power BI
+        Reports
+        Dashboards
 ```
 
 ### Real Example
