@@ -95,36 +95,36 @@ In an SSIS context, this often translates to:
 ## Bronze Rules
 * All names must start with the source system name, and table names must match their original names without renaming.
 * **sourcesystem.entity**
-   * **sourcesystem:** Name of the source system (e.g., crm, erp).
+   * **sourcesystem:** Name of the source system (ex:CRM, ERP).
    * **entity:** Exact table name from the source system.
    * **Example:** crm_customer_info → Customer information from the CRM system.
 
 ## Silver Rules
 * All names must start with the source system name, and table names must match their original names without renaming.
-* _<source_system>
-* <sourcesystem> : Name of the source system (e.g., crm, erp).
-   * : Exact table name from the source system.
-   * Example: crm_customer_info → Customer information from the CRM system.
+* **sourcesystem.entity**
+    * **sourcesystem:** Name of the source system (ex:CRM, ERP).
+    * **entity:** Exact table name from the source system.
+    * **Example:** **crm_customer_info** → Customer information from the CRM system.
 
 ## Gold Rules
 * All names must use meaningful, business-aligned names for tables, starting with the category prefix.
-* <category>.entity
-* <category> : Describes the role of the table, such as dim (dimension) or fact (fact table).
-   * entity: Descriptive name of the table, aligned with the business domain (e.g., customers, products, sales).
-   * Examples:
-   * dim_customers → Dimension table for customer data.
-      * fact_sales → Fact table containing sales transactions.
+* **category.entity**
+   * **category:** Describes the role of the table, such as dim (dimension) or fact (fact table).
+   * **entity:** Descriptive name of the table, aligned with the business domain (e.g., customers, products, sales).
+   * **Examples:**
+      * **dim_customers** → Dimension table for customer data.
+      * **fact_sales** → Fact table containing sales transactions.
    
 ## Technical Columns
 * All technical columns must start with the prefix dwh_, followed by a descriptive name indicating the column's purpose.
 * dwh_<column_name>
-* dwh : Prefix exclusively for system-generated metadata.
-   * <column_name> : Descriptive name indicating the column's purpose.
-   * Example: dwh_load_date → System-generated column used to store the date when the record was loaded.
+   * **dwh:** Prefix exclusively for system-generated metadata.
+   * **column_name:** Descriptive name indicating the column's purpose.
+   * **Example:** _dwh_load_date_ → System-generated column used to store the date when the record was loaded.
 
 ## Stored Procedure
 * All stored procedures used for loading data must follow the naming pattern: load_<layer>.
-* <layer> : Represents the layer being loaded, such as bronze, silver, or gold.
+* layer: Represents the layer being loaded, such as bronze, silver, or gold.
    * Example:
    * load_bronze → Stored procedure for loading data into the Bronze layer.
       * load_silver → Stored procedure for loading data into the Silver layer.
