@@ -755,10 +755,8 @@ BEGIN
 	END CATCH
 END
 
-
 ```
 
----
 
 # STEP 3
 
