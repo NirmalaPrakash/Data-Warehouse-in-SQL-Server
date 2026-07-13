@@ -1,6 +1,8 @@
 # Data-Warehouse-in-SQL-Server
 A **Data Warehouse** serves as a centralized, integrated, and reliable source of data for reporting and analytics. By implementing ETL processes, proper architecture, data modeling, and governance, organizations can transform raw data into meaningful business insights efficiently and accurately.
-or 
+
+OR
+
 A Data Warehouse is a master data bank used by businesses to make smart decisions. Instead of handling day-to-day transactions, it gathers information from various company systems (like sales, inventory, and customer databases), organizes it into a single format, and stores it so you can analyze long-term trends
 
 The four core concepts mean:
@@ -230,7 +232,7 @@ Data here is validated, cleaned, and standardized — but still fairly granular 
   - Slowly Changing Dimension (SCD) logic often implemented here
 - **Example:** A clean `Customers` table with deduplicated records, standardized addresses, validated emails
 
-## c) Gold Layer (Curated/Business-Level)
+## c) Gold Layer (Acurated/Business-Level)
 This is the consumption layer — optimized for reporting, dashboards, and analytics.
 
 - **Purpose:** Serve specific business use cases
