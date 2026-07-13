@@ -214,7 +214,7 @@ The medallion architecture is a layered approach to organizing data as it moves 
 Each layer represents an increasing level of data quality and business readiness.
 
 ## a) Bronze Layer (Raw)
-This is the landing zone for raw data, captured as-is from source systems.
+This is the landing zone for raw data, captured as-it-is from source systems.
 
 - **Purpose:** Preserve an unaltered historical record of source data
 - **Characteristics:**
