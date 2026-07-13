@@ -1,6 +1,19 @@
 # Data-Warehouse-in-SQL-Server
 A **Data Warehouse** serves as a centralized, integrated, and reliable source of data for reporting and analytics. By implementing ETL processes, proper architecture, data modeling, and governance, organizations can transform raw data into meaningful business insights efficiently and accurately.
+or 
+A Data Warehouse is a master data bank used by businesses to make smart decisions. Instead of handling day-to-day transactions, it gathers information from various company systems (like sales, inventory, and customer databases), organizes it into a single format, and stores it so you can analyze long-term trends
 
+The four core concepts mean:
+## 1. Subject-oriented: 
+Data is grouped around specific business topics (such as Customers or Products) rather than by how applications process it.
+## 2. Integrated: 
+Information from multiple disconnected sources (e.g., CRM and ERP systems) is cleaned and standardised to ensure it matches perfectly.
+## 3. Time-variant: 
+It acts as a timeline, holding historical data over months or years so you can compare past and present performance.
+## 4. Non-volatile: 
+Once data is stored, it becomes read-only. It doesn’t change or get deleted during daily operations, ensuring a permanent "source of truth".
+
+---
 ## Key Points
 
 ## 1. Purpose of a Data Warehouse
