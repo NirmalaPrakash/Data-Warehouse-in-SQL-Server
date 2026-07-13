@@ -5,6 +5,10 @@ OR
 
 A Data Warehouse is a master data bank used by businesses to make smart decisions. Instead of handling day-to-day transactions, it gathers information from various company systems (like sales, inventory, and customer databases), organizes it into a single format, and stores it so you can analyze long-term trends
 
+OR
+
+A Data Warehouse is a subject-oriented, integrated, time-variant, and non-volatile collection of data in support of management's decision-making process.
+
 The four core concepts mean:
 ## 1. Subject-oriented: 
 Data is grouped around specific business topics (such as Customers or Products) rather than by how applications process it.
