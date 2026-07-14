@@ -2,10 +2,14 @@
 A **Data Warehouse** (DW) is a centralized repository that stores large volumes of historical data from multiple sources for reporting, business intelligence (BI), and decision-making. Unlike operational databases, a data warehouse is optimized for querying and analysis rather than day-to-day transactions.
 
 ## Key Characteristics
-## Subject-oriented: Organized around business subjects (e.g., sales, customers, products).
-## Integrated: Combines data from different systems into a consistent format.
-## Time-variant: Stores historical data over long periods.
-## Non-volatile: Data is primarily read-only; once loaded, it is rarely updated or deleted.
+## Subject-oriented: 
+Organized around business subjects (e.g., sales, customers, products).
+## Integrated: 
+Combines data from different systems into a consistent format.
+## Time-variant: 
+Stores historical data over long periods.
+## Non-volatile: 
+Data is primarily read-only; once loaded, it is rarely updated or deleted.
 
 A **Data Warehouse** serves as a centralized, integrated, and reliable source of data for reporting and analytics. By implementing ETL processes, proper architecture, data modeling, and governance, organizations can transform raw data into meaningful business insights efficiently and accurately.
 
