@@ -224,7 +224,7 @@ This is the landing zone for raw data, captured as-it-is from source systems.
   - Acts as your single source of truth for replay/reprocessing if downstream logic changes
 - **Example:** Raw CSV exports from an ERP system, JSON from an API, exact copies of OLTP tables
 
-## b) Silver Layer (Cleansed/Conformed)
+## b) Silver Layer (Cleansed/Validated)
 Data here is validated, cleaned, and standardized — but still fairly granular (not yet aggregated for specific business questions).
 
 - **Purpose:** Create a trusted, queryable version of the data
